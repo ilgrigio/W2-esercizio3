@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+}
+#card {
+    position: relative;
+    width: 25%;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 4/6;
+}
+#card img {
+    width: 100%;
+    object-fit: cover;
+}
+.sfumatura {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 3%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 3%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 3%, rgba(255,255,255,0) 100%);
+}
+#card:hover .sfumatura {
+    display: none;
+}
+.save {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: red;
+    border-radius: 30px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+span {
+    display: inline-block;
+}
+.save span {
+    margin-top: 2px;
+    color: #fff;
+}
+.container {
+    position: relative;
+    width: 25%;
+    background-color: darkorange;
+}
+.icon {
+    background-color: #fff;
+    position: absolute;
+    bottom: 15px;
+    height: 30px;
+}
+.icon img {
+    width: 100%;
+    object-fit: cover;
+}
+#arrow {
+    
+}
+#arrow span {
+    display: inline-block;
+    color: #fff;
+}
+#upload {
+    left: 178px;
+}
+#dots {
+    right: -180px;
+}
+.circle {
+    width: 30px;
+    border-radius: 30px;
+    padding: 8px;
+}
